@@ -27,18 +27,27 @@ export default function Specialization() {
                 <Typography
                     variant="h2"
                     sx={{
-                        mb: { xs: 3, md: 4 },
-                        fontSize: { xs: '28px', md: '42px' },
+                        mb: { xs: 2, md: 4 },
+                        fontSize: { xs: '24px', sm: '28px', md: '42px' },
                         fontWeight: 600,
-                        lineHeight: 1.2
+                        lineHeight: 1.2,
+                        px: { xs: 1, md: 0 }
                     }}
                 >
                     Find by specialisation
                 </Typography>
 
-                <Grid container spacing={{ xs: 1.5, md: 2 }} mb={4} justifyContent={'center'} maxWidth="900px" mx="auto">
+                <Grid
+                    container
+                    spacing={{ xs: 1, sm: 1.5, md: 8 }}
+                    mb={4}
+                    justifyContent={'center'}
+                    maxWidth={{ xs: '100%', sm: '600px', md: '800px' }}
+                    mx="auto"
+                    px={{ xs: 1, md: 0 }}
+                >
                     {data.map(item => (
-                        <Grid item xs={3} sm={3} md={3} key={item.title}>
+                        <Grid item xs={3} sm={3} md={4} key={item.title}>
                             <IconCard img={item.icon} title={item.title} bgColor={'#FFFFFF'} shadow={true} />
                         </Grid>
                     ))}

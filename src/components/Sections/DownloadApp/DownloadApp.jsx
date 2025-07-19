@@ -17,7 +17,7 @@ export default function DownloadApp() {
     >
       <Container maxWidth="xl">
         <Grid container spacing={{ xs: 3, md: 4 }} alignItems="center">
-          <Grid item xs={12} md={5.5}>
+          <Grid item xs={12} md={5.5} width={{ xs: '50%'}}>
             <Box
               src={mobile}
               component="img"

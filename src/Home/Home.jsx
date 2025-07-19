@@ -43,31 +43,31 @@ export default function Home() {
         </Container>
       </Box>
 
-      <Box sx={{ py: { xs: 1, md: 2 } }}>
+      <Box sx={{ py: { xs: 0.5, md: 2 } }}>
         <Offers />
       </Box>
 
-      <Box sx={{ py: { xs: 1, md: 2 } }}>
+      <Box sx={{ py: { xs: 0.5, md: 2 } }}>
         <Specialization />
       </Box>
 
-      <Box sx={{ py: { xs: 1, md: 2 } }}>
+      <Box sx={{ py: { xs: 0.5, md: 2 } }}>
         <Specialists />
       </Box>
 
-      <Box sx={{ py: { xs: 1, md: 2 } }}>
+      <Box sx={{ py: { xs: 0.5, md: 2 } }}>
         <PatientCaring />
       </Box>
 
-      <Box sx={{ py: { xs: 1, md: 2 } }}>
+      <Box sx={{ py: { xs: 0.5, md: 2 } }}>
         <Blogs />
       </Box>
 
-      <Box sx={{ py: { xs: 1, md: 2 } }}>
+      <Box sx={{ py: { xs: 0.5, md: 2 } }}>
         <OurFamilies />
       </Box>
 
-      <Box sx={{ py: { xs: 1, md: 2 } }}>
+      <Box sx={{ py: { xs: 0.5, md: 2 } }}>
         <FAQs />
       </Box>
     </Box>

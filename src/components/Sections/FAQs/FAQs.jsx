@@ -42,16 +42,17 @@ export default function FAQs() {
                     textAlign='center'
                     variant='h2'
                     sx={{
-                        mb: { xs: 3, md: 4 },
-                        fontSize: { xs: '28px', md: '42px' },
+                        mb: { xs: 2, md: 4 },
+                        fontSize: { xs: '24px', sm: '28px', md: '42px' },
                         fontWeight: 600,
-                        lineHeight: 1.2
+                        lineHeight: 1.2,
+                        px: { xs: 1, md: 0 }
                     }}
                 >
                     Frequently Asked Questions
                 </Typography>
-                <Grid container alignItems='center' spacing={{ xs: 3, md: 3 }}>
-                    <Grid item xs={12} md={5}>
+                <Grid container alignItems='center' spacing={{ xs: 2, sm: 3, md: 3 }}>
+                    <Grid item xs={12} sm={12} md={5} order={{ xs: 2, md: 1 }}>
                         <Box
                             src={faqBanner}
                             component='img'
@@ -59,13 +60,15 @@ export default function FAQs() {
                                 width: '100%',
                                 height: 'auto',
                                 borderRadius: '12px',
-                                maxWidth: '450px'
+                                maxWidth: { xs: '100%', sm: '350px', md: '450px' },
+                                mx: 'auto',
+                                display: 'block'
                             }}
                         />
                     </Grid>
 
-                    <Grid item xs={12} md={7}>
-                        <Box sx={{ maxWidth: { xs: '100%', md: '100%' } }}>
+                    <Grid item xs={12} sm={12} md={7} order={{ xs: 1, md: 2 }}>
+                        <Box sx={{ maxWidth: { xs: '100%', md: '80%', marginLeft:'40px' } }}>
                             <CustomizedAccordions data={faqs} />
                         </Box>
                     </Grid>

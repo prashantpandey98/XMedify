@@ -11,33 +11,32 @@ export default function Footer() {
     <Box
       bgcolor="primary.secondary"
       sx={{
-        py: { xs: 3, md: 4 },
-        mt: { xs: 3, md: 4 }
+        py: { xs: 4, md: 6 },
       }}
     >
       <Container maxWidth="xl">
-        <Grid container spacing={{ xs: 2, md: 3 }}>
-          <Grid item xs={12} md={3.5}>
+        <Grid container spacing={{ xs: 2, sm: 3, md: 30 }}>
+          <Grid item xs={12} sm={12} md={8}>
             <Stack
-              alignItems="flex-start"
+              alignItems={{ xs: 'center', md: 'flex-start' }}
               justifyContent="flex-start"
-              spacing={{ xs: 2, md: 3 }}
+              spacing={{ xs: 2, sm: 2.5, md: 5 }}
             >
               <Box
                 src={logo}
                 sx={{
-                  height: { xs: 28, md: 32 },
+                  height: { xs: 24, sm: 28, md: 32 },
                   width: 'auto'
                 }}
                 alt="Medify"
                 component="img"
               />
-              <Stack direction="row" spacing={1.5}>
+              <Stack direction="row" spacing={{ xs: 1, sm: 1.5 }}>
                 <Box
                   component="img"
                   src={fb}
                   sx={{
-                    height: { xs: 28, md: 32 },
+                    height: { xs: 24, sm: 28, md: 32 },
                     width: 'auto',
                     cursor: 'pointer',
                     transition: 'transform 0.2s ease',
@@ -51,7 +50,7 @@ export default function Footer() {
                   component="img"
                   src={twitter}
                   sx={{
-                    height: { xs: 28, md: 32 },
+                    height: { xs: 24, sm: 28, md: 32 },
                     width: 'auto',
                     cursor: 'pointer',
                     transition: 'transform 0.2s ease',
@@ -65,7 +64,7 @@ export default function Footer() {
                   component="img"
                   src={yt}
                   sx={{
-                    height: { xs: 28, md: 32 },
+                    height: { xs: 24, sm: 28, md: 32 },
                     width: 'auto',
                     cursor: 'pointer',
                     transition: 'transform 0.2s ease',
@@ -79,7 +78,7 @@ export default function Footer() {
                   component="img"
                   src={pinterest}
                   sx={{
-                    height: { xs: 28, md: 32 },
+                    height: { xs: 24, sm: 28, md: 32 },
                     width: 'auto',
                     cursor: 'pointer',
                     transition: 'transform 0.2s ease',
@@ -93,8 +92,8 @@ export default function Footer() {
             </Stack>
           </Grid>
 
-          <Grid item xs={12} md={2.83}>
-            <Stack spacing={{ xs: 1.2, md: 1.5 }}>
+          <Grid item xs={6} sm={4} md={6}>
+            <Stack spacing={{ xs: 1.5, md: 2 }} alignItems={{ xs: 'flex-start', md: 'flex-start' }}>
               <FooterLink>About Us</FooterLink>
               <FooterLink>Our Pricing</FooterLink>
               <FooterLink>Our Gallery</FooterLink>
@@ -103,8 +102,8 @@ export default function Footer() {
             </Stack>
           </Grid>
 
-          <Grid item xs={12} md={2.83}>
-            <Stack spacing={{ xs: 1.2, md: 1.5 }}>
+          <Grid item xs={6} sm={4} md={4}>
+            <Stack spacing={{ xs: 1.5, md: 2 }} alignItems={{ xs: 'flex-start', md: 'flex-start' }}>
               <FooterLink>Orthology</FooterLink>
               <FooterLink>Neurology</FooterLink>
               <FooterLink>Dental Care</FooterLink>
@@ -113,8 +112,8 @@ export default function Footer() {
             </Stack>
           </Grid>
 
-          <Grid item xs={12} md={2.83}>
-            <Stack spacing={{ xs: 1.2, md: 1.5 }}>
+          <Grid item xs={12} sm={4} md={4}>
+            <Stack spacing={{ xs: 1.5, md: 2 }} alignItems={{ xs: 'flex-start', md: 'flex-start' }}>
               <FooterLink>About Us</FooterLink>
               <FooterLink>Our Pricing</FooterLink>
               <FooterLink>Our Gallery</FooterLink>
@@ -129,8 +128,8 @@ export default function Footer() {
             fontWeight: 300,
             color: "#fff",
             fontSize: { xs: 11, md: 13 },
-            pt: { xs: 1.5, md: 2 },
-            mt: { xs: 2, md: 3 },
+            pt: { xs: 2, md: 3 },
+            mt: { xs: 3, md: 4 },
             borderTop: "1px solid rgba(255,255,255,0.1)",
             textAlign: { xs: 'center', md: 'left' }
           }}

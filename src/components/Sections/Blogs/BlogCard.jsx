@@ -12,6 +12,8 @@ export default function BlogCard() {
                 transition: 'all 0.3s ease',
                 cursor: 'pointer',
                 height: '100%',
+                width: '350px',
+                marginRight:4,
                 display: 'flex',
                 flexDirection: 'column',
                 '&:hover': {
@@ -25,17 +27,17 @@ export default function BlogCard() {
                 src={featured}
                 sx={{
                     width: '100%',
-                    height: { xs: '140px', md: '150px' },
+                    height: { xs: '140px', sm: '120px', md: '130px' },
                     objectFit: 'cover'
                 }}
             />
-            <Box sx={{ p: { xs: 1.2, md: 1.5 }, flex: 1, display: 'flex', flexDirection: 'column' }}>
+            <Box sx={{ p: { xs: 1.2, sm: 1, md: 1.2 }, flex: 1, display: 'flex', flexDirection: 'column' }}>
                 <Typography
                     sx={{
                         color: '#77829D',
                         fontWeight: 500,
                         mb: 0.8,
-                        fontSize: { xs: '10px', md: '11px' }
+                        fontSize: { xs: '11px', sm: '10px', md: '11px' }
                     }}
                 >
                     Medical | March 31, 2022
@@ -44,12 +46,12 @@ export default function BlogCard() {
                     component='h3'
                     sx={{
                         color: '#1B3C74',
-                        fontSize: { xs: '13px', md: '14px' },
+                        fontSize: { xs: '14px', sm: '13px', md: '14px' },
                         fontWeight: 600,
                         lineHeight: 1.3,
                         mb: 1.2,
                         flex: 1,
-                        minHeight: { xs: '32px', md: '34px' },
+                        minHeight: { xs: '36px', sm: '32px', md: '34px' },
                         display: '-webkit-box',
                         WebkitLineClamp: 2,
                         WebkitBoxOrient: 'vertical',
