@@ -12,8 +12,8 @@ export default function BlogCard() {
                 transition: 'all 0.3s ease',
                 cursor: 'pointer',
                 height: '100%',
-                width: '350px',
-                marginRight:4,
+                maxWidth: { xs: '100%', sm: '350px', md: '350px' },
+                width: '100%',
                 display: 'flex',
                 flexDirection: 'column',
                 '&:hover': {

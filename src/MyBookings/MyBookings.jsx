@@ -18,8 +18,7 @@ export default function MyBookings() {
     setFilteredBookings(bookings);
   }, [bookings]);
 
-  //Separate page/component to render all the booked hospitals of user alogwith chosen date and time slot
-  //It utilises HospitalCard component to generate the cards with data
+
   return (
     <>
       <NavBar />

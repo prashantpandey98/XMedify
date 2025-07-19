@@ -10,8 +10,8 @@ export default function PatientCaring() {
             position: 'relative'
         }}>
             <Container maxWidth="xl">
-                <Grid container spacing={{ xs: 2, sm: 3, md: 3 }} alignItems='center' xs={4}>
-                    <Grid item order={{ xs: 2, md: 1 }}>
+                <Grid container spacing={{ xs: 2, sm: 3, md: 3 }} alignItems='center'>
+                    <Grid item xs={12} sm={12} md={5} order={{ xs: 2, md: 1 }}>
                         <Box
                             component='img'
                             src={banner}
@@ -69,10 +69,12 @@ export default function PatientCaring() {
                                 </ListItemIcon>
                                 <ListItemText
                                     primary='Stay Updated About Your Health'
-                                    primaryTypographyProps={{
-                                        fontSize: { xs: '14px', md: '16px' },
-                                        fontWeight: 500,
-                                        color: '#1B3C74'
+                                    slotProps={{
+                                        primary: {
+                                            fontSize: { xs: '14px', md: '16px' },
+                                            fontWeight: 500,
+                                            color: '#1B3C74'
+                                        }
                                     }}
                                 />
                             </ListItem>
@@ -82,10 +84,12 @@ export default function PatientCaring() {
                                 </ListItemIcon>
                                 <ListItemText
                                     primary='Check Your Results Online'
-                                    primaryTypographyProps={{
-                                        fontSize: { xs: '14px', md: '16px' },
-                                        fontWeight: 500,
-                                        color: '#1B3C74'
+                                    slotProps={{
+                                        primary: {
+                                            fontSize: { xs: '14px', md: '16px' },
+                                            fontWeight: 500,
+                                            color: '#1B3C74'
+                                        }
                                     }}
                                 />
                             </ListItem>
@@ -95,10 +99,12 @@ export default function PatientCaring() {
                                 </ListItemIcon>
                                 <ListItemText
                                     primary='Manage Your Appointments'
-                                    primaryTypographyProps={{
-                                        fontSize: { xs: '14px', md: '16px' },
-                                        fontWeight: 500,
-                                        color: '#1B3C74'
+                                    slotProps={{
+                                        primary: {
+                                            fontSize: { xs: '14px', md: '16px' },
+                                            fontWeight: 500,
+                                            color: '#1B3C74'
+                                        }
                                     }}
                                 />
                             </ListItem>
