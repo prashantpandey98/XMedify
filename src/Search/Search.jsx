@@ -11,10 +11,10 @@ import AutohideSnackbar from "../components/AutohideSnackbar/AutohideSnackbar";
 import NavBar from "../components/NavBar/NavBar";
 
 export default function Search() {
-  const [seachParams /*setSearchParams*/] = useSearchParams();
+  const [searchParams /*setSearchParams*/] = useSearchParams();
   const [hospitals, setHospitals] = useState([]);
-  const [state, setState] = useState(seachParams.get("state"));
-  const [city, setCity] = useState(seachParams.get("city"));
+  const [state, setState] = useState(searchParams.get("state"));
+  const [city, setCity] = useState(searchParams.get("city"));
   const availableSlots = {
     morning: ["11:30 AM"],
     afternoon: ["12:00 PM", "12:30 PM", "01:30 PM", "02:00 PM", "02:30 PM"],
@@ -47,9 +47,9 @@ export default function Search() {
   }, [state, city]);
 
   useEffect(() => {
-    setState(seachParams.get("state"));
-    setCity(seachParams.get("city"));
-  }, [seachParams]);
+    setState(searchParams.get("state"));
+    setCity(searchParams.get("city"));
+  }, [searchParams]);
 
   // show booking modal
   const handleBookingModal = (details) => {
@@ -96,11 +96,16 @@ export default function Search() {
           {hospitals.length > 0 && (
             <Box sx={{ mb: { xs: 3, md: 4 } }}>
               <Typography
+                component="h1"
                 sx={{
-                  color: '#000'
+                  fontSize: { xs: 20, md: 24 },
+                  lineHeight: 1.2,
+                  mb: 2,
+                  fontWeight: 500,
+                  color: '#102851'
                 }}
               >
-                <h1>{`${hospitals.length} medical centers available in ${city.toLowerCase()}`}</h1>
+                {`${hospitals.length} medical centers available in ${city.toLowerCase()}`}
               </Typography>
               <Stack direction="row" spacing={2} alignItems="flex-start" ml={1}>
                 <Box
@@ -158,7 +163,23 @@ export default function Search() {
                 </Typography>
               )}
 
-              {!state && (
+              {!isLoading && hospitals.length === 0 && state && city && (
+                <Typography
+                  variant="h3"
+                  sx={{
+                    bgcolor: "#fff",
+                    p: { xs: 2, md: 3 },
+                    borderRadius: 2,
+                    textAlign: 'center',
+                    fontSize: { xs: 18, md: 24 },
+                    color: '#666'
+                  }}
+                >
+                  No medical centers found in {city}
+                </Typography>
+              )}
+
+              {(!state || !city) && (
                 <Typography
                   variant="h3"
                   sx={{
