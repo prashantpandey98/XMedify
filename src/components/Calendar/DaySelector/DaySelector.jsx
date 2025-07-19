@@ -55,6 +55,7 @@ export default function DaySelector({
               sx={{ cursor: "pointer" }}
             >
               <Typography
+                component="p"
                 fontWeight={isEqual(day, selectedDate) ? 700 : 400}
                 fontSize={{ xs: 11, md: 16 }}
               >

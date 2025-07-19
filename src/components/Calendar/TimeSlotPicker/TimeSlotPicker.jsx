@@ -44,6 +44,7 @@ export default function TimeSlotPicker({
           flexWrap={"wrap"}
         >
           <Typography
+            component="p"
             width={{ xs: 1, md: "15%" }}
             fontSize={{ xs: 14, md: 16 }}
           >
@@ -66,6 +67,7 @@ export default function TimeSlotPicker({
           flexWrap={"wrap"}
         >
           <Typography
+            component="p"
             width={{ xs: 1, md: "15%" }}
             fontSize={{ xs: 14, md: 16 }}
           >
@@ -80,7 +82,7 @@ export default function TimeSlotPicker({
           ))}
         </Stack>
       )}
-      {availableSlots.afternoon.length > 0 && (
+      {availableSlots.evening.length > 0 && (
         <Stack
           direction="row"
           alignItems="center"
@@ -88,6 +90,7 @@ export default function TimeSlotPicker({
           flexWrap={"wrap"}
         >
           <Typography
+            component="p"
             width={{ xs: 1, md: "15%" }}
             fontSize={{ xs: 14, md: 16 }}
           >
