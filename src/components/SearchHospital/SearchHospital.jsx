@@ -73,6 +73,7 @@ export default function SearchHospital() {
         <Select
           displayEmpty
           name="state"
+          id="state"
           value={formData.state}
           onChange={handleChange}
           startAdornment={
@@ -98,6 +99,7 @@ export default function SearchHospital() {
         <Select
           displayEmpty
           name="city"
+          id="city"
           value={formData.city}
           onChange={handleChange}
           startAdornment={

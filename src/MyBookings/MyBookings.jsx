@@ -46,16 +46,14 @@ export default function MyBookings() {
               alignItems={{ xs: "center", md: "flex-end" }}
             >
               <Typography
-                component="h1"
                 sx={{
                   pb: { xs: 0, md: 1 },
-                  fontSize: { xs: 28, md: 40 },
-                  fontWeight: 700,
+                  fontSize: { xs: 20 },
                   color: "#fff",
                   textAlign: { xs: 'center', md: 'left' }
                 }}
               >
-                My Bookings
+                <h1>My Bookings</h1>
               </Typography>
               <Box
                 sx={{
@@ -112,10 +110,11 @@ export default function MyBookings() {
               component="img"
               src={cta}
               sx={{
-                width: { xs: '100%', md: 360 },
+                width: { xs: '100%', md: 300 },
                 maxWidth: 360,
                 height: 'auto',
                 borderRadius: 2,
+                marginLeft:'40px',
                 boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
                 alignSelf: { xs: 'center', md: 'flex-start' }
               }}

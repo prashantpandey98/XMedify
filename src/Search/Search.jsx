@@ -96,21 +96,13 @@ export default function Search() {
           {hospitals.length > 0 && (
             <Box sx={{ mb: { xs: 3, md: 4 } }}>
               <Typography
-                component="h1"
                 sx={{
-                  fontSize: { xs: 20, md: 24 },
-                  lineHeight: 1.2,
-                  mb: 2,
-                  fontWeight: 500,
-                  color: '#102851'
+                  color: '#000'
                 }}
               >
-                {`${hospitals.length} medical centers available in `}
-                <Box component="span" sx={{ textTransform: "capitalize", color: '#2AA7FF' }}>
-                  {city.toLowerCase()}
-                </Box>
+                <h1>{`${hospitals.length} medical centers available in ${city.toLowerCase()}`}</h1>
               </Typography>
-              <Stack direction="row" spacing={2} alignItems="flex-start">
+              <Stack direction="row" spacing={2} alignItems="flex-start" ml={1}>
                 <Box
                   component="img"
                   src={icon}
